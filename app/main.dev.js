@@ -28,7 +28,9 @@ const template = [
    {
       label: 'File',
       submenu: [
-         isMac ? { role: 'close' } : { role: 'quit' }
+         isMac ? [
+          { role: 'hide' }, { role: 'close' }, { role: 'quit' } ]
+          : { role: 'quit' }
       ]
    },
 
